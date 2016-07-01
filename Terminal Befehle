@@ -1,0 +1,24 @@
+# Shortcuts: Terminal Befehle
+#Wlan Dongle anwesend:
+$ lsusb 
+
+# Zertifikat kopieren:
+$ sudo cp deutsche-telekom-root-ca-2.crt /etc/wpa_supplicant/deutsche-telekom-root-ca-2.crt
+
+# Config Datei editieren (nano editer)
+$ sudo nano wpa_supplicant.conf
+
+#Verbindung testen:
+$ sudo wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -D wext -i wlan0 -d
+
+#Im Hintergrund laufen lassen:
+$sudo wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -D wext -i wlan0 -B
+
+#Schreib/Leserechte:
+$ sudo chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf RPI_eduroam_whs
+
+#Wlan0 ausschalten:
+$ sudo ifdown wlan0
+
+#Wlan0 anschalten:
+$ sudo ifup wlan0
