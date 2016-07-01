@@ -37,18 +37,18 @@ network={
 }
 
 
-#Schritt 4:
+#Schritt 5:
 Testen der Verbindung : 
 sudo wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -D wext -i wlan0 -d
 Bei erfolgreicher Verbindung kommt irgendwann:
 EAPOL: startWhen-->0
 Außerdem erscheint in der Menü leiste das WIFI-Symbol
 
-#Schritt 5:
+#Schritt 6:
 Anwendung im Hintergrund starten: 
 sudo wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -D wext -i wlan0 -B
 
-#Schritt 6:
+#Schritt 7:
 Schützen der eigenen Informationen: Passwort & Username: 
 sudo chmod 0600 /etc/wpa_supplicant/wpa_supplicant.conf	
 RPI_eduroam_whs
