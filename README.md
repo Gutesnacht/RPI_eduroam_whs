@@ -1,6 +1,6 @@
 #RPI_eduroam_whs
-#EDUROAM FÜR DAS RRASPBERRY PI - WHS EDITION
-#Erarbeitet aus Wlan Einrichtung RPI eduroam der Uni Kiel & WHS-WLAN Wiki
+EDUROAM FÜR DAS RRASPBERRY PI - WHS EDITION
+Erarbeitet aus Wlan Einrichtung RPI eduroam der Uni Kiel & WHS-WLAN Wiki
 c. Lukas Wöhle
 Als ROOT ausführen oder sudo (empfohlen)
 
@@ -33,7 +33,7 @@ network={
 	identity="WHSBenutzername@w-hs.de"
 	anonymous_identity="anonymous@w-hs.de"
 	ca_cert="/etc/wpa_supplicant/deutsche-telekom-root-ca-2.crt"
-	phase2=auth=MSCHAPV2"
+	phase2="auth=MSCHAPV2"
 }
 
 
