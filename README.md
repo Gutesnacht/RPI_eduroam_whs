@@ -60,4 +60,5 @@ Manchmal bricht das WLAN zusammen. Dann einfach wlan adapter ausschalten:
 sudo ifdown wlan0
 Und wieder in der wpa_supplicant.config nachschauen, ob sich prot und  key_mgnt
 geändert haben! KOMMT VOR DASS DIE AUF NONE GESETZT WERDEN (noch keine Lösung).
-
+Danach Wlan adapter einschalten: 
+sudo ifup wlan0
